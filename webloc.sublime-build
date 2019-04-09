@@ -1,0 +1,11 @@
+{
+    "selector": "text.webloc",
+    "target": "webloc",
+    "variants":
+    [
+        {
+            "name": "Run",
+            "target": "webloc"
+        }
+    ]
+}
