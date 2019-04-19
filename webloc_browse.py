@@ -3,19 +3,18 @@ import sublime
 import sublime_plugin
 import plistlib
 import subprocess
-import sys
 import webbrowser
 
 """
-MacOS customize:
+macOS customize:
 /usr/bin/open                           default
 path/to/custom/open                     custom
 export PATH=path/to/custom:$PATH        ~/.bashrc
 """
 
-MAC = "darwin" in sys.platform.lower()
-LINUX = "linux" in sys.platform.lower()
-WINDOWS = "win32" in sys.platform.lower() or "cygwin" in sys.platform.lower()
+MAC = "osx" in sublime.platform()
+LINUX = "linux" in sublime.platform()
+WINDOWS = "windows" in sublime.platform()
 
 
 class WeblocCommand(sublime_plugin.WindowCommand):
