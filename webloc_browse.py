@@ -13,8 +13,6 @@ export PATH=path/to/custom:$PATH        ~/.bashrc
 """
 
 MAC = "osx" in sublime.platform()
-LINUX = "linux" in sublime.platform()
-WINDOWS = "windows" in sublime.platform()
 
 
 class WeblocCommand(sublime_plugin.WindowCommand):
